@@ -1,0 +1,97 @@
+
+<!-- nastavnik-detaljno.component.html -->
+
+<div class="card">
+    <div class="card-header">
+      <h3>Detalji o nastavniku</h3>
+    </div>
+    <div class="card-body">
+      <div class="details">
+        <p><strong>Ime:</strong> {{nastavnik.ime}}</p>
+        <p><strong>Prezime:</strong> {{nastavnik.prezime}}</p>
+        <p><strong>Mejl:</strong> {{nastavnik.mejl}}</p>
+        <p><strong>Telefon:</strong> {{nastavnik.telefon}}</p>
+        <p><strong>Predmeti:</strong> {{nastavnik.predmeti}}</p>
+      </div>
+      <div class="profile-picture">
+        <img [src]="prikaziSliku()" alt="Profilna slika" width="100" height="100" />
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="card">
+    <div class="card-header">
+      <h3>Ocene i komentari</h3>
+    </div>
+    <div class="card-body">
+      <table border="2px">
+        <tr>
+          <th>Ucenik</th>
+          <th>Komentar</th>
+          <th>Ocena</th>
+        </tr>
+        <tr *ngFor="let c of casovi">
+          <td>{{c.ucenik}}</td>
+          <td>{{c.komentar_ucenika}}</td>
+          <td>{{c.ocena}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="card">
+    <div class="card-header">
+      <h3>Zakazivanje časa</h3>
+    </div>
+    <div class="card-body">
+      <form (submit)="zakaziCas()">
+        <label for="predmet">Predmet:</label>
+          <select id="predmet" [(ngModel)]="predmet" name="predmet" [disabled]="nastavnik.predmeti.length === 1" [value]="predmet" required>
+              <option *ngFor="let p of nastavnik.predmeti" [value]="p">{{ p }}</option>
+          </select>
+          
+          <br>
+  
+          <label for="datum">Datum:</label>
+          <input type="date" id="datum" [(ngModel)]="datum" name="datum" required>
+  
+          <br>
+  
+          <label for="vreme">Vreme:</label>
+          <input type="time" id="vreme" [(ngModel)]="vreme" name="vreme" required
+             step="1800" min="10:00" max="18:00">
+  
+          <br>
+  
+          <label for="teme">Teme:</label>
+          <textarea id="teme" [(ngModel)]="teme" name="teme" rows="4" cols="50" required></textarea>
+  
+          <br>
+  
+          <label for="dupliCas">Želim dupli čas:</label>
+          <input type="checkbox" id="dupliCas" [(ngModel)]="dupliCas" name="dupliCas">
+  
+          <br>
+  
+          <button type="submit" class="blue-button">Zakazi čas</button>
+      </form>
+      <div *ngIf="success" class="alert alert-success">
+        {{ success }}
+      </div>
+      <div *ngIf="errorZakazivanje1" class="alert alert-danger">
+        {{ errorZakazivanje1 }}
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="navigation-links">
+    <a href="ucenikovi_nastavnici">Nazad</a>
+    <a href="interaktivni_kalendar">Interaktivni kalendar</a>
+  </div>
+  

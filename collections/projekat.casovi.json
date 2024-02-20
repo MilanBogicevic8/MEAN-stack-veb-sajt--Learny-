@@ -1,0 +1,1195 @@
+[{
+  "_id": {
+    "$oid": "65ac687114d34ced1222d8aa"
+  },
+  "datum_od": {
+    "$date": "2024-02-06T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-06T12:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Linearna algebra",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 2
+},
+{
+  "_id": {
+    "$oid": "65ac698b14d34ced1222d8b9"
+  },
+  "datum_od": {
+    "$date": "2024-02-06T09:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-06T10:30:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 2
+},
+{
+  "_id": {
+    "$oid": "65ac6a0514d34ced1222d8c4"
+  },
+  "datum_od": {
+    "$date": "2024-01-21T01:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-21T09:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Hemija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-21T01:06:06.715Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-25T09:06:12.866Z"
+  },
+  "razlog_otkazivanja": "Bolestan sam izvini",
+  "__v": 0,
+  "broj_ucesnika": 6
+},
+{
+  "_id": {
+    "$oid": "65ac6a0a14d34ced1222d8c9"
+  },
+  "datum_od": {
+    "$date": "2024-01-21T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-21T12:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "Ponovi ono sto sam ti pojasnio za sledeci cas",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-25T09:06:21.908Z"
+  },
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 4
+},
+{
+  "_id": {
+    "$oid": "65ac6ab314d34ced1222d8eb"
+  },
+  "datum_od": {
+    "$date": "2024-01-22T13:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-22T15:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "Bilo je uzivanje raditi sa tobom",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-25T09:06:21.917Z"
+  },
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 2
+},
+{
+  "_id": {
+    "$oid": "65ac6c5414d34ced1222d8f7"
+  },
+  "datum_od": {
+    "$date": "2024-01-22T09:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-22T10:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "Neziva priroda",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Svet oko nas",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 2
+},
+{
+  "_id": {
+    "$oid": "65ac75b656e6ea9a98a96f2c"
+  },
+  "datum_od": {
+    "$date": "2024-01-15T12:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-15T13:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "cas1",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.529Z"
+  },
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 2
+},
+{
+  "_id": {
+    "$oid": "65ac75c756e6ea9a98a96f32"
+  },
+  "datum_od": {
+    "$date": "2024-01-15T14:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-15T15:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "cas2",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Hemija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.535Z"
+  },
+  "razlog_otkazivanja": "",
+  "__v": 0,
+  "broj_ucesnika": 2
+},
+{
+  "_id": {
+    "$oid": "65acdaee69bb6bee65e97391"
+  },
+  "datum_od": {
+    "$date": "2023-01-10T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-01-10T12:30:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Dekartov proizvod",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "Hvala sto ste me naucili dekartov proizvod",
+  "ocena": 5,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdb1f69bb6bee65e97397"
+  },
+  "datum_od": {
+    "$date": "2023-01-25T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-01-25T11:30:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Drugi Njutnov zakon",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Fizika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "Hvala na pomoci u savladavanju drugog njutnovog zakona.",
+  "ocena": 5,
+  "datum_potvrde": {
+    "$date": "2023-01-25T09:00:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.572Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdb4769bb6bee65e9739d"
+  },
+  "datum_od": {
+    "$date": "2023-02-14T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-02-14T12:30:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Ugljovodonici",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Hemija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-02-14T09:00:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.545Z"
+  },
+  "razlog_otkazivanja": "Imama obaveze",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdb7369bb6bee65e973a3"
+  },
+  "datum_od": {
+    "$date": "2023-03-07T11:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-03-07T13:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "C++ operatori",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Informatika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "Super",
+  "ocena": 3,
+  "datum_potvrde": {
+    "$date": "2023-03-07T10:30:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.542Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdbad69bb6bee65e973a9"
+  },
+  "datum_od": {
+    "$date": "2023-05-16T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-05-16T11:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Kupa",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-05-16T09:30:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.562Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdbde69bb6bee65e973af"
+  },
+  "datum_od": {
+    "$date": "2023-07-12T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-07-12T12:30:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Treci njutnov zakon",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Fizika",
+  "komentar_nastavnika": "Odlicno smo ponovili tu temu!",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-07-12T10:00:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:48.737Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdc0869bb6bee65e973b5"
+  },
+  "datum_od": {
+    "$date": "2023-09-13T10:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-09-13T12:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Zasicene masne kiseline",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Hemija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "Odlico ste mi objasnili sve masne kiseline.",
+  "ocena": 5,
+  "datum_potvrde": {
+    "$date": "2023-09-13T09:30:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.570Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdc2269bb6bee65e973bb"
+  },
+  "datum_od": {
+    "$date": "2023-10-10T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-10-10T11:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Limesi",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-10-10T09:30:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.574Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdc4969bb6bee65e973c1"
+  },
+  "datum_od": {
+    "$date": "2023-11-07T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-11-07T12:30:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Proporcije",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-11-07T10:00:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T13:05:34.585Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdc9d69bb6bee65e973d6"
+  },
+  "datum_od": {
+    "$date": "2023-01-11T12:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-01-11T13:30:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Skupovi",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "Imas odlicno predzznanje",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-01-11T11:00:00.000Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-25T09:06:21.914Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdcb669bb6bee65e973dc"
+  },
+  "datum_od": {
+    "$date": "2023-03-15T11:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-03-15T13:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Prvi njutnov zakon",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-03-15T10:30:00.000Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdcf369bb6bee65e973e7"
+  },
+  "datum_od": {
+    "$date": "2023-05-24T11:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-05-24T13:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Piramida",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-03-15T10:30:00.000Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdd1369bb6bee65e973ed"
+  },
+  "datum_od": {
+    "$date": "2023-10-17T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-10-17T11:30:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Rad,sila,energija",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-10-17T09:00:00.000Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acdd3c69bb6bee65e973f3"
+  },
+  "datum_od": {
+    "$date": "2023-12-19T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-12-19T12:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Rastvori,smese, procentni racun",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Hemija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-25T09:06:12.878Z"
+  },
+  "razlog_otkazivanja": "Putujem...Izvini",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acea59c8274110332a174e"
+  },
+  "datum_od": {
+    "$date": "2023-12-19T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-12-19T12:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "Prvi svetski rat",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Istorija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "dobar",
+  "ocena": 3,
+  "datum_potvrde": {
+    "$date": "2023-12-19T09:00:00.000Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acea7cc8274110332a1754"
+  },
+  "datum_od": {
+    "$date": "2023-11-27T09:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-11-27T11:30:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "Podela planina",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Geografija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "dobar",
+  "ocena": 3,
+  "datum_potvrde": {
+    "$date": "2023-11-27T08:30:00.000Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65acea8bc8274110332a175a"
+  },
+  "datum_od": {
+    "$date": "2023-12-26T11:30:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2023-12-26T13:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "Uglovi",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2023-12-26T09:30:00.000Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b0fee4308da790ad8c5b99"
+  },
+  "datum_od": {
+    "$date": "2024-01-29T15:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-29T17:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Piramida",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-24T21:54:17.052Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T14:38:22.407Z"
+  },
+  "razlog_otkazivanja": "Ne mogu da stignem",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b0ff33308da790ad8c5ba7"
+  },
+  "datum_od": {
+    "$date": "2024-01-29T14:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-29T15:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Molekulske interakcije u rastopu",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Fizika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-28T14:04:32.601Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b104c7308da790ad8c5bc5"
+  },
+  "datum_od": {
+    "$date": "2024-01-25T15:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-25T16:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "dhbck",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b10577308da790ad8c5bd6"
+  },
+  "datum_od": {
+    "$date": "2024-01-26T16:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-26T17:00:00.000Z"
+  },
+  "ucenik": [
+    "milan"
+  ],
+  "nastavnik": "drazen",
+  "teme": "",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18cc89eedcca861961c89"
+  },
+  "datum_od": {
+    "$date": "2024-01-26T12:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-26T14:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Elipsa",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "Jos samo hiperbolu i krug da naucimo",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18cde9eedcca861961c8f"
+  },
+  "datum_od": {
+    "$date": "2024-01-30T13:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-30T15:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Krug",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18cf09eedcca861961c95"
+  },
+  "datum_od": {
+    "$date": "2024-01-31T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-31T12:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Parabola",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-28T12:38:41.097Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T14:04:32.604Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18d079eedcca861961c9b"
+  },
+  "datum_od": {
+    "$date": "2024-02-01T12:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-01T14:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Hiperbola",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-24T22:21:08.190Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T14:38:22.418Z"
+  },
+  "razlog_otkazivanja": "Mozda drugi put",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18dd49eedcca861961d42"
+  },
+  "datum_od": {
+    "$date": "2024-02-01T13:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-01T15:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Hiperbola",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18def9eedcca861961d48"
+  },
+  "datum_od": {
+    "$date": "2024-02-01T11:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-01T13:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Prava,ravan i duz",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b18fe59eedcca861961db0"
+  },
+  "datum_od": {
+    "$date": "2024-01-24T23:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-25T01:30:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Elektrostatika",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Fizika",
+  "komentar_nastavnika": "Odlicno si se spremio za kontrolni. Samo tako nastavi!",
+  "komentar_ucenika": "Puno toga novog sam naucio. Hvala!",
+  "ocena": 5,
+  "datum_potvrde": null,
+  "datum_citanja": {
+    "$date": "2024-01-28T14:04:32.607Z"
+  },
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b222a4cf401225c872b5a7"
+  },
+  "datum_od": {
+    "$date": "2024-01-26T10:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-26T12:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "ziva priroda",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Svet oko nas",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-25T08:59:24.934Z"
+  },
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b224bccf401225c872b641"
+  },
+  "datum_od": {
+    "$date": "2024-01-26T13:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-01-26T15:00:00.000Z"
+  },
+  "ucenik": [
+    "maja"
+  ],
+  "nastavnik": "jelica",
+  "teme": "Gromadne i venacne planine",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Geografija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b6576f1c3417e4681be80a"
+  },
+  "datum_od": {
+    "$date": "2024-02-02T15:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-02T17:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Korenovanje",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-28T13:45:22.422Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T14:38:22.412Z"
+  },
+  "razlog_otkazivanja": "Putujem za Pariz.",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b6577d1c3417e4681be810"
+  },
+  "datum_od": {
+    "$date": "2024-02-02T12:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-02T14:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Stepenovanje",
+  "potvrdjen": false,
+  "odrzan": false,
+  "predmet": "Matematika",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": null,
+  "datum_citanja": null,
+  "razlog_otkazivanja": "",
+  "broj_ucesnika": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b65e79d777e1359dad558e"
+  },
+  "datum_od": {
+    "$date": "2024-02-02T16:00:00.000Z"
+  },
+  "datum_do": {
+    "$date": "2024-02-02T17:00:00.000Z"
+  },
+  "ucenik": [
+    "niki"
+  ],
+  "nastavnik": "drazen",
+  "teme": "Van der valsove sile",
+  "potvrdjen": true,
+  "odrzan": false,
+  "predmet": "Hemija",
+  "komentar_nastavnika": "",
+  "komentar_ucenika": "",
+  "ocena": 0,
+  "datum_potvrde": {
+    "$date": "2024-01-28T14:04:13.798Z"
+  },
+  "datum_citanja": {
+    "$date": "2024-01-28T14:38:22.415Z"
+  },
+  "razlog_otkazivanja": "Putujem...",
+  "broj_ucesnika": 2,
+  "__v": 0
+}]

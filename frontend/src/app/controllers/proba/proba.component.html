@@ -1,0 +1,27 @@
+<p class="plava">proba works!</p>
+<ejs-schedule
+  height="850"
+  width="1250"
+  [eventSettings]="eventObject"
+  (change)="onChange($event)"
+  (eventClick)="onEventClick($event)"
+  (eventRendered)="onEventRendered($event)"
+  (actionBegin)="onActionBegin($event)"
+  (actionComplete)="onActionComplete($event)"
+  (dataBound)="onDataBound($event)"
+  (dragStop)="onDragStop($event)"
+  (resizeStop)="onResizeStop($event)"
+>
+  <e-views>
+    <e-view option='Week' startHour='10:00'  endHour='18:00' [showWeekend]='false' [class.zelena]='true'>
+        <ng-template #eventTemplate let-data>
+            <div class="zelena">
+                <div>{{data.Subject}}</div>
+                <div>{{getFormattedTime(data.StartTime)}} - {{getFormattedTime(data.EndTime)}}</div>
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </ng-template>
+    </e-view>
+    <e-view option='Day'  startHour='10:00' endHour='18:00' [showWeekend]='false'></e-view>
+  </e-views>
+</ejs-schedule>

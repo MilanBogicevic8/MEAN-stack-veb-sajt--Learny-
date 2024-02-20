@@ -1,0 +1,47 @@
+<!-- nastavnik-home.component.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavnik</title>
+    <link rel="stylesheet" href="nastavnik-home.component.css">
+</head>
+<body>
+    <header class="header bg-primary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link text-white" href="/nastavnik_home">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="nastavnik_casovi">Časovi</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="nastavnikovi_ucenici">Moji učenici</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="profile-card container mt-4">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img [src]="prikaziSliku()" alt="Profilna slika" class="img-fluid rounded-circle mb-3" />
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #0056b3;">{{nastavnik.ime}} {{nastavnik.prezime}}</h2>
+                <p><strong>Adresa:</strong> {{nastavnik.adresa}}</p>
+                <p><strong>Mejl:</strong> {{nastavnik.mejl}}</p>
+                <p><strong>Telefon:</strong> {{nastavnik.telefon}}</p>
+                <p><strong>Predmeti:</strong> {{nastavnik.predmeti}}</p>
+                <p><strong>Uzrast:</strong> {{nastavnik.uzrast}}</p>
+            </div>
+            <div class="col-md-2">
+                <!-- Dodaj potreban sadržaj ili komponente -->
+            </div>
+        </div>
+        <a href="nastavnik_promenapodataka" class="d-block mt-3" style="color: #0056b3;" (click)="promenaPod()">Promena podataka</a> <br>
+        <button class="btn btn-danger btn-block mt-3" (click)="logout()" style="background-color: #dc3545; border-color: #dc3545;">Log Out</button>
+    </section>
+    <br>
+</body>
+</html>

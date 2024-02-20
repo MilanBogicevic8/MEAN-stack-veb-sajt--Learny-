@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<ul class="pagination pagination-lg">
+    <li>
+        <a (click)="postaviDijagram(1)">Dijagram linija</a>
+    </li>
+    <li>
+        <a (click)="postaviDijagram(2)">Dijagram histogram</a>
+    </li>
+    <li>
+        <a  (click)="postaviDijagram(3)">Dijagram pita</a>
+    </li>
+    <li>
+        <a  (click)="postaviDijagram(4)">Dijagram bar</a>
+    </li>
+    <li>
+        <a  (click)="postaviDijagram(5)">Dijagram donut</a>
+    </li>
+    <li>
+        <a  (click)="postaviDijagram(6)">Dijagram piramida</a>
+    </li>
+</ul>
+
+<br>
+<div *ngIf="dijagram==1">
+    <app-dijagram-linija></app-dijagram-linija>
+</div>
+<div *ngIf="dijagram==2">
+    <app-dijagram-histogram></app-dijagram-histogram>
+</div>
+<div *ngIf="dijagram==3">
+    <app-dijagram-pita></app-dijagram-pita>
+</div>
+<div *ngIf="dijagram==4">
+    <app-dijagram-bar></app-dijagram-bar>
+</div>
+<div *ngIf="dijagram==5">
+    <app-dijagram-donut></app-dijagram-donut>
+</div>
+<div *ngIf="dijagram==6">
+    <app-dijagram-piramida></app-dijagram-piramida>
+</div>
+
+<h2>Nastavnici</h2>
+<table border="2px">
+    <tr>
+        <th>Slika</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Telefon</th>
+        <th>Mejl</th>
+        <th>Pol</th>
+        <th>Predmeti</th>
+        <th>Uzrast</th>
+        <th>CV</th>
+        <th>Status</th>
+        <th>Aktivacija-Deaktivacija</th>
+        <th>Promena podataka</th>
+        
+    </tr>
+    <tr *ngFor="let n of nastavnici">
+        <td>
+            <img [src]="prikaziSliku(n.slikaDohvacena)" alt="Profilna slika" width="50" height="50" />
+        </td>
+        <td>{{n.ime}}</td>
+        <td>{{n.prezime}}</td>
+        <td>{{n.telefon}}</td>
+        <td>{{n.mejl}}</td>
+        <td>{{n.pol}}</td>
+        <td>{{n.predmeti}}</td>
+        <td>{{n.uzrast}}</td>
+        <td>
+            <button (click)="cv(n.kor_ime)">CV</button>
+        </td>
+        <td>{{n.status}}</td>
+        <td>
+            <button *ngIf="n.status=='neodobren'" (click)="aktiviraj(n)">Aktiviraj</button>
+            <button *ngIf="n.status=='odobren'" (click)="deaktiviraj(n)">Deaktiviraj</button>
+        </td>
+        <td>
+            <a href="nastavnik_promenapodataka" (click)="promena(n)">Promena podataka</a>
+        </td>
+
+    </tr>
+</table>
+<br>
+<h2>Učenici</h2>
+ <br>
+<table border="2px">
+    <tr>
+        <th>Slika</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Telefon</th>
+        <th>Mejl</th>
+        <th>Pol</th>
+        <th>Skola</th>
+        <th>Razred</th>
+        
+    </tr>
+    <tr *ngFor="let u of ucenici">
+        <td>
+            <img [src]="prikaziSliku(u.slikaDohvacena)" alt="Profilna slika" width="50" height="50" />
+        </td>
+        <td>{{u.ime}}</td>
+        <td>{{u.prezime}}</td>
+        <td>{{u.telefon}}</td>
+        <td>{{u.mejl}}</td>
+        <td>{{u.pol}}</td>
+        <td>{{u.skola}}</td>
+        <td>{{u.razred}}</td>
+    </tr>
+</table>
+<br>
+<h2> Predmeti </h2>
+ <br>
+<table border="2px">
+    <tr>
+        <th>Predmet</th>
+        <th>Odobren</th>
+        <th>Odobri</th>
+    </tr>
+    <tr *ngFor="let p of predmeti">
+        <td>{{p.naziv}}</td>
+        <td>{{p.odobren}}</td>
+        <td>
+            <button *ngIf="p.odobren==false" (click)="odobriPredmet(p)">Odobri</button>
+        </td>
+    </tr>
+</table>
+<br>
+<div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+    {{ errorMessage }}
+</div>
+<form>
+    Dodaj predmet:
+    <br>
+    <input type="text" name="predmet" id="predmet" [(ngModel)]="predmet"> <br>
+    <button (click)="dodajPredmet()">Dodaj predmet</button>
+</form>
+<button class="btn btn-danger btn-block mt-3" (click)="logout()" style="background-color: #dc3545; border-color: #dc3545;">Log Out</button>
+</body>

@@ -1,0 +1,11 @@
+
+
+<div class="ucenici-container">
+  <div class="ucenik-card" *ngFor="let u of ucenici">
+    <h3>{{u.ime}} {{u.prezime}}</h3>
+    <a href="dosije_ucenika" (click)="dosije(u.kor_ime)">Dosije</a>
+  </div>
+</div>
+<div class="navigation-links">
+    <a href="nastavnik_home">Nazad</a>
+</div>

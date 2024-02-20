@@ -1,0 +1,67 @@
+/* nastavnik-home.component.css */
+
+header {
+    background-color: #007bff;
+    padding: 15px 0;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.profile-card {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 20px; /* Prilagodite po potrebi */
+}
+
+.profile-card h2 {
+    color: #007bff;
+}
+
+.btn-danger {
+    width:100px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}

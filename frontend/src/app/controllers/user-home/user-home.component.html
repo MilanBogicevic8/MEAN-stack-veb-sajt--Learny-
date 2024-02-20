@@ -1,0 +1,55 @@
+<!-- student-profile.component.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    
+</head>
+<body>
+
+<header class="header bg-primary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" routerLink="/user_home">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLink="/ucenikovi_nastavnici">Nastavnici</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLink="/ucenikovi_casovi">Časovi</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLink="/obavestenje_ucenika">Obaveštenje</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="profile-card container mt-4">
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <img [src]="prikaziSliku()" alt="Profilna slika" class="img-fluid rounded-circle mb-3" />
+        </div>
+        <div class="col-md-6">
+            <h2 style="color: #0056b3;">{{user.ime}} {{user.prezime}}</h2>
+            <p><strong>Adresa:</strong> {{user.adresa}}</p>
+            <p><strong>Mejl:</strong> {{user.mejl}}</p>
+            <p><strong>Telefon:</strong> {{user.telefon}}</p>
+            <p><strong>Škola:</strong> {{user.skola}}</p>
+            <p><strong>Razred:</strong> {{user.razred}}</p>
+        </div>
+        <div class="col-md-2">
+            <!-- Add a new container for the app-promena-podataka-ucenik component -->
+            <!--
+            <div class="promena-podataka-container">
+                <app-promena-podataka-ucenik></app-promena-podataka-ucenik>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <a href="promena_podataka_ucenik" class="d-block mt-3" style="color: #0056b3;">Promena podataka</a> <br>
+    <button class="btn btn-danger btn-block mt-3" (click)="logout()" style="background-color: #dc3545; border-color: #dc3545;">Log Out</button>
+</section>
+<br>
+</body>
+</html>

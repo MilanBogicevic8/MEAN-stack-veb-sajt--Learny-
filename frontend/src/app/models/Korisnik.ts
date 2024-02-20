@@ -1,0 +1,28 @@
+export class Korisnik{
+    _id:string=""
+    ime:string=""
+    prezime:string=""
+    kor_ime:string=""
+    lozinka:string=""
+    tip:string=""
+    pitanje:string[]=[]
+    pol:string=""
+    adresa:string=""
+    telefon:string=""
+    mejl:string=""
+    slika?:File
+    //ucenik
+    skola:string=""
+    razred:number=0
+    //nastavnik
+    status:string
+    uzrast:string[]=[]
+    predmeti:string[]=[]
+    ocene:number[]=[]
+    bezbednost:string=""
+    bezbednost_pitanje:string=""
+    //pomocno
+    cvdata:any
+    slikaDohvacena:Blob
+    message:string
+}

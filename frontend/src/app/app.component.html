@@ -1,0 +1,7 @@
+<div class="wrapper">
+    <app-header *ngIf="shouldShowHeader()"></app-header>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer *ngIf="shouldShowFooter()"></app-footer>
+  </div>

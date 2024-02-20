@@ -1,0 +1,157 @@
+.ocena-zvezde {
+    color: #fdd835; /* Žuta boja */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+/* styles.css */
+
+.search-bar {
+  text-align: center;
+  margin: 10px 0;
+}
+
+select, input {
+  margin: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.ocena-zvezde {
+  color: gold;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-links a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.navigation-links a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+.ucenikovi-casovi-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.odrzani-casovi-container, .zakazani-casovi-container {
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.oceni-button, .start-class-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.oceni-button:hover, .start-class-button:hover {
+  background-color: #0056b3;
+}
+
+.rating-form-container {
+  margin-top: 20px;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sort-buttons button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sort-buttons button:hover {
+  background-color: darkblue;
+}

@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  
+  
+  .item-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Prilagodite rastojanje između kontrole i centralnog sadržaja */
+  }
+  
+  /* Dodajte ovaj stil za ikone */
+  i {
+    margin: 0 10px; /* Prilagodite rastojanje između ikona po potrebi */
+    cursor: pointer;
+  }
+  
+  /* Dodajte ovaj stil za hover efekat na ikonama */
+  i:hover {
+    color: #007bff; /* Promenite boju po potrebi */
+  }
+
+  .navigation-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-links a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  .navigation-links a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

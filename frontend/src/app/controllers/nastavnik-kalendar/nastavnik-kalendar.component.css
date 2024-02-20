@@ -1,0 +1,52 @@
+.zelena{
+    background: greenyellow;
+    color:white;
+}
+
+.crvena{
+    background: red;
+    color: white;
+}
+
+.zuta{
+    background: yellow;
+    color:white;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-links a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  .navigation-links a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .alert-danger {
+    color: #721c24; /* Bootstrap's alert-danger text color */
+    background-color: #f8d7da; /* Bootstrap's alert-danger background color */
+    border: 1px solid #f5c6cb; /* Bootstrap's alert-danger border color */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  /* Success alert */
+  .alert-success {
+    color: #155724; /* Bootstrap's alert-success text color */
+    background-color: #d4edda; /* Bootstrap's alert-success background color */
+    border: 1px solid #c3e6cb; /* Bootstrap's alert-success border color */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }

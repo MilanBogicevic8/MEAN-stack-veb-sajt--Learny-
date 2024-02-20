@@ -1,0 +1,13 @@
+
+<h2>Nastavnici</h2>
+<ejs-accumulationchart id="chart-container1" [legendSettings]='legendSettings'>
+    <e-accumulation-series-collection>
+        <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie' radius="100%" [dataLabel]='datalabel'></e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
+<h2>Učenici</h2>
+<ejs-accumulationchart id="chart-container2" [legendSettings]='legendSettings'>
+    <e-accumulation-series-collection>
+        <e-accumulation-series [dataSource]='piedata2' xName='x' yName='y' type='Pie' radius="100%" [dataLabel]='datalabel'></e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>

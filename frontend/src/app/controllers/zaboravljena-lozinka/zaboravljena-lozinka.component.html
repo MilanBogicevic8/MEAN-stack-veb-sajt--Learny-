@@ -1,0 +1,20 @@
+<header>
+    <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+        {{ errorMessage }}
+     </div>
+    <div *ngIf="firstPage==true">
+        <input type="text" placeholder="korisnicko ime" [(ngModel)]="kor_ime">
+        <button (click)="next()">Sledeći korak</button>
+    </div>
+    <div *ngIf="secondPage==true">
+        Bezbedonosno pitanje: {{pitanje}} <br>
+        <input type="text" placeholder="Vas odgovor" [(ngModel)]="odg">
+        <button (click)="next()">Sledeći korak</button>
+    </div>
+    <div *ngIf="thirdPage==true">
+        <input type="password" placeholder="Nova lozinka" [(ngModel)]="novaLozinka"> <br>
+        <input type="password" placeholder="Ponovljena nova lozinka" [(ngModel)]="ponovo1"> <br>
+        <input type="password" placeholder="Ponovljena nova lozinka" [(ngModel)]="ponovo2"> <br>
+        <button (click)="next()">Promeni lozinku</button>
+    </div>
+</header>

@@ -1,0 +1,433 @@
+[{
+  "_id": {
+    "$oid": "65a6bb5c158c11102297e67f"
+  },
+  "kor_ime": "admin",
+  "lozinka": "admin",
+  "tip": "admin"
+},
+{
+  "_id": {
+    "$oid": "65ac5cf814d34ced1222d742"
+  },
+  "ime": "Milan",
+  "prezime": "Bogicevic",
+  "kor_ime": "milan",
+  "lozinka": "$2a$08$GOEoPGIqo15iMKlC0qoNMORfS0vspfKZJqPC0v..0YjbXNKjLDmVW",
+  "tip": "ucenik",
+  "status": "odobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "M",
+  "adresa": "Branka Radicevica 1",
+  "telefon": "0658808552",
+  "mejl": "milanbogicevic2001@gmail.com",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "naruto2.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1705794808073naruto2.jpg",
+        "path": "uploads\\1705794808073naruto2.jpg",
+        "size": 16918
+      }
+    ]
+  },
+  "skola": "osnovna",
+  "razred": 8,
+  "uzrast": [],
+  "predmeti": [],
+  "ocene": [
+    5
+  ],
+  "slika": "1705835368720naruto2.jpg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65ac5f9614d34ced1222d761"
+  },
+  "ime": "Drazen",
+  "prezime": "Draskovic",
+  "kor_ime": "drazen",
+  "lozinka": "$2a$08$6iKBuPdKzgWI.X1LcXodb../n4r8GpbcAktiqGoZ61V9hxgpI758O",
+  "tip": "nastavnik",
+  "status": "odobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "M",
+  "adresa": "Bulevar Kralja Aleksandra",
+  "telefon": "065123123",
+  "mejl": "ddraskovic@gmail.com",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "saske.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1705795478784saske.jpg",
+        "path": "uploads\\1705795478784saske.jpg",
+        "size": 8190
+      }
+    ],
+    "cv": [
+      {
+        "fieldname": "cv",
+        "originalname": "cv2.pdf",
+        "encoding": "7bit",
+        "mimetype": "application/pdf",
+        "destination": "./uploads/",
+        "filename": "1705795478785cv2.pdf",
+        "path": "uploads\\1705795478785cv2.pdf",
+        "size": 350416
+      }
+    ]
+  },
+  "uzrast": [
+    "Osnovna skola 1-4. razred",
+    "Osnovna skola 5-8. razred",
+    "Srednja skola"
+  ],
+  "predmeti": [
+    "Matematika",
+    "Fizika",
+    "Hemija",
+    "Informatika"
+  ],
+  "ocene": [
+    3,
+    5,
+    5,
+    5
+  ],
+  "slika": "1705795859606saske.jpg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj predmeta",
+  "__v": 7
+},
+{
+  "_id": {
+    "$oid": "65ac62fe14d34ced1222d7c3"
+  },
+  "ime": "Jelica",
+  "prezime": "Cincovic",
+  "kor_ime": "jelica",
+  "lozinka": "$2a$08$E1Al8p6qzX8kgcuurz2LQ.mvc/e9JdJh.7.1QzeVFX7LGEn4.A1Ha",
+  "tip": "nastavnik",
+  "status": "odobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "Z",
+  "adresa": "Bulevar Kralja Aleksandra",
+  "telefon": "065 123 123",
+  "mejl": "jeca@etf.rs",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "sakura.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1705796350129sakura.jpg",
+        "path": "uploads\\1705796350129sakura.jpg",
+        "size": 67238
+      }
+    ],
+    "cv": [
+      {
+        "fieldname": "cv",
+        "originalname": "cv2.pdf",
+        "encoding": "7bit",
+        "mimetype": "application/pdf",
+        "destination": "./uploads/",
+        "filename": "1705796350131cv2.pdf",
+        "path": "uploads\\1705796350131cv2.pdf",
+        "size": 350416
+      }
+    ]
+  },
+  "uzrast": [
+    "Srednja skola"
+  ],
+  "predmeti": [
+    "Matematika",
+    "Istorija",
+    "Geografija",
+    "Svet oko nas"
+  ],
+  "ocene": [
+    3,
+    3
+  ],
+  "slika": "1705796350129sakura.jpg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj",
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65ac644e14d34ced1222d80d"
+  },
+  "ime": "Marija",
+  "prezime": "Janjicijevic",
+  "kor_ime": "maja",
+  "lozinka": "$2a$08$CSMoYWo1u0PpVPezbgCfFe3hR8IzsacD4zNqUcNuaj7V3gy3ANrta",
+  "tip": "ucenik",
+  "status": "odobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "Z",
+  "adresa": "Kosmajska 12",
+  "telefon": "065 123 456",
+  "mejl": "maja@gmail.rs",
+  "skola": "gimnazija",
+  "razred": 3,
+  "uzrast": [],
+  "predmeti": [],
+  "ocene": [
+    5,
+    5,
+    2,
+    4
+  ],
+  "slika": "default.jpg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj",
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "65b0df56a16155b72ed7e143"
+  },
+  "ime": "Zaharije",
+  "prezime": "Radivojevic",
+  "kor_ime": "zaki",
+  "lozinka": "$2a$08$C4z298S5BRwlqZzA.4Mf3O1cqi4RnIHgWVgBfBCT6yvyQeio.ZXSi",
+  "tip": "nastavnik",
+  "status": "neodobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "M",
+  "adresa": "Bulevar kralja Aleksandra 5",
+  "telefon": "065 123 456",
+  "mejl": "zaki@etf.rs",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "saske.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1706090326281saske.jpg",
+        "path": "uploads\\1706090326281saske.jpg",
+        "size": 8190
+      }
+    ],
+    "cv": [
+      {
+        "fieldname": "cv",
+        "originalname": "cv2.pdf",
+        "encoding": "7bit",
+        "mimetype": "application/pdf",
+        "destination": "./uploads/",
+        "filename": "1706090326286cv2.pdf",
+        "path": "uploads\\1706090326286cv2.pdf",
+        "size": 350416
+      }
+    ]
+  },
+  "uzrast": [
+    "Osnovna skola 5-8. razred",
+    "Srednja skola"
+  ],
+  "predmeti": [
+    "Osnovi racunarske tehnike"
+  ],
+  "ocene": [],
+  "slika": "1706090326281saske.jpg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b0e4dbef66e11b81a212d8"
+  },
+  "ime": "Nikola",
+  "prezime": "Bogicevic",
+  "kor_ime": "niki",
+  "lozinka": "$2a$08$DAgs/as5KY7SfDqKD.qEjul3acfb4r2aQV1cqmv26n/LeV1WlAA12",
+  "tip": "ucenik",
+  "status": "odobren",
+  "pitanje": [
+    "Niki1!"
+  ],
+  "pol": "M",
+  "adresa": "Branka Radicevica 1",
+  "telefon": "065 209 8686",
+  "mejl": "danger72@gmail.com",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "saske.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1706091739581saske.jpg",
+        "path": "uploads\\1706091739581saske.jpg",
+        "size": 8190
+      }
+    ]
+  },
+  "skola": "gimnazija",
+  "razred": 2,
+  "uzrast": [],
+  "predmeti": [],
+  "ocene": [
+    5,
+    3,
+    4
+  ],
+  "slika": "1706091739581saske.jpg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj",
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "65b638d01c3417e4681be48b"
+  },
+  "ime": "Dafina",
+  "prezime": "Antonijevic",
+  "kor_ime": "daca",
+  "lozinka": "$2a$08$9ozjFilRrAUrnUOt02eaQezV8128AZi/0ITagHwh1G73YcnslXt0q",
+  "tip": "ucenik",
+  "status": "odobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "Z",
+  "adresa": "Branka Radicevica 1",
+  "telefon": "065 2332999",
+  "mejl": "dafina@gmail.com",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "temari.jpeg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1706440912699temari.jpeg",
+        "path": "uploads\\1706440912699temari.jpeg",
+        "size": 134072
+      }
+    ]
+  },
+  "skola": "strucna",
+  "razred": 2,
+  "uzrast": [],
+  "predmeti": [],
+  "ocene": [],
+  "slika": "1706440912699temari.jpeg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Broj",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b63e6a1c3417e4681be4a1"
+  },
+  "ime": "Vesna",
+  "prezime": "Simonovic",
+  "kor_ime": "veca",
+  "lozinka": "$2a$08$7BzeLGYlQ39.hj7lGEImw.xtfIqA39k7ZiV5PsdeDLf6yCQIjVgma",
+  "tip": "nastavnik",
+  "status": "neodobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "Z",
+  "adresa": "Trg slobode 3",
+  "telefon": "065 23232333",
+  "mejl": "veca@etf.rs",
+  "files": {
+    "photo": [
+      {
+        "fieldname": "photo",
+        "originalname": "temari.jpeg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "./uploads/",
+        "filename": "1706442346088temari.jpeg",
+        "path": "uploads\\1706442346088temari.jpeg",
+        "size": 20794
+      }
+    ],
+    "cv": [
+      {
+        "fieldname": "cv",
+        "originalname": "cv2.pdf",
+        "encoding": "7bit",
+        "mimetype": "application/pdf",
+        "destination": "./uploads/",
+        "filename": "1706442346089cv2.pdf",
+        "path": "uploads\\1706442346089cv2.pdf",
+        "size": 350416
+      }
+    ]
+  },
+  "uzrast": [
+    "Srednja skola"
+  ],
+  "predmeti": [
+    "Fizika"
+  ],
+  "ocene": [],
+  "slika": "1706442346088temari.jpeg",
+  "bezbednost": "123",
+  "bezbednost_pitanje": "Godine",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b8959c87af0e0190d6965c"
+  },
+  "ime": "Lule",
+  "prezime": "Djelic",
+  "kor_ime": "Luka",
+  "lozinka": "$2a$08$TEH8a0bGXlCsU1OWvAJz1eRfyQee4u0TcAP/qgb4RjkMZQDMv3NGK",
+  "tip": "ucenik",
+  "status": "odobren",
+  "pitanje": [
+    "Abcdef1!"
+  ],
+  "pol": "M",
+  "adresa": "Utrinska 1",
+  "telefon": "065 222 222",
+  "mejl": "luka@gmail.com",
+  "skola": "osnovna",
+  "razred": 6,
+  "uzrast": [],
+  "predmeti": [],
+  "ocene": [],
+  "slika": "default.jpg",
+  "bezbednost": "Luka",
+  "bezbednost_pitanje": "Ime",
+  "__v": 0
+}]

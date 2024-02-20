@@ -1,0 +1,48 @@
+
+<ejs-schedule
+  height="850"
+  width="1250"
+  [eventSettings]="eventObject"
+  (actionComplete)="onActionComplete($event)"
+  
+>
+  <e-views>
+    <e-view option='Week' startHour='10:00'  endHour='18:00' [showWeekend]='false' [class.zelena]='true'>
+        <ng-template #eventTemplate let-data>
+            <div [class]="getCssClasses(data)">
+                <div>{{data.Predmet}}</div>
+                <div>{{data.Subject}}</div>
+                <div>{{getFormattedTime(data.StartTime)}} - {{getFormattedTime(data.EndTime)}}</div>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </ng-template>
+    </e-view>
+    <e-view option='Day'  startHour='10:00' endHour='18:00' [showWeekend]='false'></e-view>
+  </e-views>
+</ejs-schedule>
+
+<form (submit)="zakaziCas()" style="float: left; margin-left: 20px;">
+  <div *ngIf="errorZakazivanje1" class="alert alert-danger">
+    {{errorZakazivanje1}}
+  </div>
+  <label for="predmet">Predmet:</label>
+  <select id="predmet" [(ngModel)]="predmet" name="predmet" [disabled]="nastavnik.predmeti.length === 1" [value]="predmet" required>
+      <option *ngFor="let p of nastavnik.predmeti" [value]="p">{{ p }}</option>
+  </select>
+  <br>
+  <label for="teme">Teme:</label>
+  <textarea id="teme" [(ngModel)]="opis" name="teme" rows="4" cols="50" required></textarea>
+
+  <button type="submit">Zakazi čas</button>
+  <div class="navigation-links">
+    <a href="nastavnik_detaljno">Nazad</a>
+  </div>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+

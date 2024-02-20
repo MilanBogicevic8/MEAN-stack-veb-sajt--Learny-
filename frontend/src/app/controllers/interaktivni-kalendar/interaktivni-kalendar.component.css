@@ -1,0 +1,211 @@
+
+
+.schedule-event-template.e-schedule .e-vertical-view .e-content-wrap .e-appointment {
+    border-radius: 8px;
+  }
+  
+  .schedule-event-template.e-schedule .e-vertical-view .e-content-wrap .e-appointment .e-appointment-details {
+    padding: 0;
+    height: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap {
+    height: 100%;
+    white-space: normal;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .image {
+    padding: 8px 0 4px;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .image img {
+    height: 100%;
+    width: 100%;
+    padding: 10px 25%;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .subject {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 4px 4px 4px;
+    height: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .time {
+    height: 50px;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .time,
+  .schedule-event-template.e-schedule .template-wrap .description {
+    font-size: 12px;
+    padding: 4px 6px 4px;
+    overflow: hidden;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .e-timeline-view .e-appointment .e-appointment-details {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .e-timeline-view .template-wrap {
+    width: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .e-timeline-view .template-wrap .subject {
+    font-size: 16px;
+    height: 36px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0 15px;
+  }
+
+.zelena{
+    background: yellowgreen;
+    padding: 10px;
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    display: block; /* osigurava da spoljašnja komponenta ima blokovski prikaz */
+    width: 100%;    /* postavlja širinu na 100% roditelja */
+    height: 100%; 
+}
+
+.zuta{
+    background: yellow;
+    padding: 10px;
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    display: block; /* osigurava da spoljašnja komponenta ima blokovski prikaz */
+    width: 100%;    /* postavlja širinu na 100% roditelja */
+    height: 100%; 
+}
+
+.crvena{
+  background: red;
+  color: white;
+}
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.plava {
+  color: #007bff;
+}
+
+#schedule-container {
+  margin-top: 20px;
+}
+
+#schedule-container .zelena {
+  background-color: #4caf50;
+}
+
+form {
+  float: left;
+  margin-left: 20px;
+}
+
+form label {
+  margin-right: 10px;
+}
+
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #721c24; /* Bootstrap's alert-danger text color */
+  background-color: #f8d7da; /* Bootstrap's alert-danger background color */
+  border: 1px solid #f5c6cb; /* Bootstrap's alert-danger border color */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+form {
+  float: left;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  /* Stilizovani alerti */
+  .alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .alert-success {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .alert-danger {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+
+  .navigation-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-links a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  .navigation-links a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }

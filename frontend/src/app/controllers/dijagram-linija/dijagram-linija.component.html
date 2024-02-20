@@ -1,0 +1,17 @@
+
+<ejs-chart [primaryXAxis]="xAxis" [primaryYAxis]="yAxis" [title]="chartTitle" [legendSettings]="legend" [tooltip]="tooltipSettings">
+  <e-series-collection>
+      <e-series *ngIf="pom0" type='Line' [dataSource]='pom0' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom1" type='Line' [dataSource]='pom1' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+
+      <e-series *ngIf="pom2" type='Line' [dataSource]='pom2' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom3" type='Line' [dataSource]='pom3' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom4" type='Line' [dataSource]='pom4' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom5" type='Line' [dataSource]='pom5' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom6" type='Line' [dataSource]='pom6' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom7" type='Line' [dataSource]='pom7' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom8" type='Line' [dataSource]='pom8' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      <e-series *ngIf="pom9" type='Line' [dataSource]='pom9' xName='mesec' yName='broj'  [marker]="markerSettings"></e-series>
+      
+  </e-series-collection>
+</ejs-chart>

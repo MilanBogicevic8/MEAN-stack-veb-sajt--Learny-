@@ -1,0 +1,41 @@
+<!-- student-list.component.html -->
+
+<div class="search-bar">
+  <input type="text" [(ngModel)]="imePretraga" placeholder="Pretraga po imenu" (input)="filtriraniNastavnici()">
+  <input type="text" [(ngModel)]="prezimePretraga" placeholder="Pretraga po prezimenu" (input)="filtriraniNastavnici()">
+  <input type="text" [(ngModel)]="predmetPretraga" placeholder="Pretraga po predmetu" (input)="filtriraniNastavnici()">
+
+  <!--<select [(ngModel)]="sortiranje" (change)="sortiranjeNastavnika()">
+    <option value="ime">Sortiraj po imenu</option>
+    <option value="prezime">Sortiraj po prezimenu</option>
+    <option value="predmet">Sortiraj po predmetu</option>
+  </select>-->
+</div>
+
+<div class="card-container">
+  <div class="card" *ngFor="let n of filtriraniNastavnici()" (click)="detaljnije(n)">
+    <div class="card-header">
+      <h3>{{n.ime}} {{n.prezime}}</h3>
+    </div>
+    <div class="card-body">
+      <p><strong>Tip:</strong> {{n.tip}}</p>
+      <p><strong>Predmeti:</strong> {{n.predmeti}}</p>
+      <p><strong>Prosečna ocena:</strong> {{prosecnaOcena(n)}}
+        <span *ngFor="let zvezdica of oceneToStars(prosecnaOcena(n))" class="ocena-zvezde">&#9733;</span>
+      </p>
+      <p><strong>Uzrast:</strong> {{n.uzrast}}</p>
+    </div>
+  </div>
+</div>
+<div class="sort-buttons">
+  <strong>Sortiranje: </strong>
+  <button (click)="sortiranjePoImenuRastuce()">Ime rastuće</button>
+  <button (click)="sortiranjePoImenuOpadajuce()">Ime opadajuće</button>
+  <button (click)="sortiranjePoPrezimenuRastuce()">Prezime rastuće</button>
+  <button (click)="sortiranjePoPrezimenuOpadajuce()">Prezime opadajuće</button>
+  <button (click)="sortiranjePoPredmetuRastuce()">Predmet rastuće</button>
+  <button (click)="sortiranjePoPredmetuOpadajuce()">Predmet opadajuće</button>
+</div>
+<div class="navigation-links">
+<a href="user_home">Nazad</a>
+</div>

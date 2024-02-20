@@ -1,0 +1,31 @@
+
+<div *ngIf="poruka!=''" class="alert alert-danger" role="alert">
+    {{poruka}}
+</div>
+
+<div *ngIf="successMessage!=''" class="alert alert-success" role="alert">
+    {{successMessage}}
+</div>
+<br>
+<form>
+    <h3>Promena lozinke</h3>
+    <br>
+    <label for="ime">Korisničko ime</label>
+    <input type="text" name="ime" [(ngModel)]="kor_ime" placeholder="Unesite korisničko ime">
+    <br>
+    <label for="old">Stara lozinka</label>
+    <input type="password" name="old" [(ngModel)]="staraLozinka" placeholder="Stara lozinka" required>
+    <br>
+    <label for="new">Nova lozinka</label>
+    <input type="password" name="new" [(ngModel)]="novaLozinka" placeholder="Nova lozinka" required>
+    <br>
+    <label for="confirm">Potvrdi novu lozinku</label>
+    <input type="password" name="confirm" [(ngModel)]="potvrda1" placeholder="Potvrdi novu lozinku">
+    <br>
+    <label for="confirm">Potvrdi novu lozinku</label>
+    <input type="password" name="confirm" [(ngModel)]="potvrda2" placeholder="Potvrdi novu lozinku">
+    
+
+    <button (click)="promeniLozinku()">Promeni lozinku</button>
+</form>
+<br>

@@ -1,0 +1,22 @@
+
+<ejs-chart
+  id="chart-container"
+  [primaryXAxis]="primaryXAxis"
+  [legendSettings]="legendSettings"
+  [title]="title"
+  
+>
+  <e-series-collection>
+    <e-series
+      *ngFor="let chart of chartData"
+      legendShape="Rectangle"
+      type="Column"
+      columnWidth="1"
+      xName="dan"
+      yName="prosek"
+      [name]="chart.dan"
+      [pointColorMapping]="chart.color"
+      [dataSource]="[chart]"
+    ></e-series>
+  </e-series-collection>
+</ejs-chart>

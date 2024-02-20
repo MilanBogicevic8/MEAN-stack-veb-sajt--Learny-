@@ -1,0 +1,65 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  input {
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 250px;
+  }
+
+  button {
+    padding: 10px 15px;
+    margin: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Specific styling for error message */
+  .error-message {
+    color: #d9534f; /* Bootstrap's red alert color */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Styling for different pages */
+  [firstPage="true"] {
+    display: block;
+  }
+
+  [secondPage="true"] {
+    display: none;
+  }
+
+  [thirdPage="true"] {
+    display: none;
+  }
+
+  .alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .alert-success {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .alert-danger {
+    background-color: #e74c3c;
+    color: #fff;
+  }

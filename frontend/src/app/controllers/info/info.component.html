@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Page</title>
+</head>
+
+<body>
+  <div class="info-container">
+    <p class="info-title">Informacije o sajtu</p>
+
+    <div class="info-section">
+      <p *ngIf="info">Ukupno učenika: {{ info.totalStudents }}</p>
+      <p *ngIf="info">Ukupno aktivnih nastavnika: {{ info.totalActiveTeachers }}</p>
+      <p *ngIf="info">Časova u poslednjih sedam dana: {{ info.classesLastSevenDays }}</p>
+      <p *ngIf="info">Časova u poslednjih trideset dana: {{ info.classesLastThirtyDays }}</p>
+    </div>
+
+    <div class="info-section" *ngIf="info">
+      <p>Nastavnici angažovani po predmetu:</p>
+      <ul *ngFor="let engagement of info.engagedTeachersBySubject">
+        <li *ngIf="daLiJeOdobren(engagement.subject)">
+          {{ engagement.subject }}:
+          <span *ngFor="let teacher of engagement.teachers; let last = last">
+            {{ teacher.ime }} {{ teacher.prezime }}{{ !last ? ', ' : '' }}
+          </span>
+          <span *ngIf="engagement.teachers.length==0">
+            /
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="button-container">
+      <button (click)="sortAscIme()">Sortiraj rastuće po imenu</button>
+      <button (click)="sortDescIme()">Sortiraj opadajuće po imenu</button>
+      <button (click)="sortAscPrezime()">Sortiraj rastuće po prezimenu</button>
+      <button (click)="sortDescPrezime()">Sortiraj opadajuće po prezimenu</button>
+      <button (click)="sortAscPredmet()">Sortiraj rastuće po predmetu</button>
+      <button (click)="sortDescPredmet()">Sortiraj opadajuće po predmetu</button>
+    </div>
+    <div class="navigation-links">
+      <a href=''>Nazad</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="search-container">
+    <input type="text" placeholder="Pretraživanje nastavnika po imenu" [(ngModel)]="ime1">
+    <!--<button (click)="ime()">Pretraži ime</button> <br>-->
+    <br>
+    <input type="text" placeholder="Pretraživanje nastavnika po prezimenu" [(ngModel)]="prezime1">
+    <!--<button (click)="prezime()">Pretraži prezime</button> <br>-->
+    <br>
+    <input type="text" placeholder="Pretraživanje predmeta" [(ngModel)]="predmet1"> <br>
+    <button (click)="pretragaGlobalno()">Pretraga</button> <br>
+  </div>
+
+  <div class="results-container">
+    <div *ngFor="let p of predmeti" class="result-item">
+      {{p.predmet}} <br>
+      <div *ngFor="let n of p.niz">{{n}}</div>
+    </div>
+
+    <hr>
+    
+    <div *ngFor="let n of nastavnici" class="result-item">
+        {{n}}
+    </div>
+  </div>
+</body>
+
+</html>

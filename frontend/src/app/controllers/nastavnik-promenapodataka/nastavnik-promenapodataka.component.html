@@ -1,0 +1,44 @@
+<!-- nastavnik-promenapodataka.component.html -->
+<br>
+<div *ngIf="errorMessage !== ''" class="alert alert-danger" role="alert">
+    {{errorMessage}}
+</div>
+<div *ngIf="successMessage !== ''" class="alert alert-success" role="alert">
+    {{successMessage}}
+</div>
+<form class="profile-form">
+    <label for="ime">Ime:</label> <br>
+    <input type="text" name="ime" [(ngModel)]="ime"> <br>
+    <label for="prezime">Prezime:</label> <br>
+    <input type="text" name="prezime" [(ngModel)]="prezime"> <br>
+    <label for="mejl">Mejl:</label> <br>
+    <input type="text" name="mejl" [(ngModel)]="mejl"> <br>
+    <label for="telefon">Telefon:</label> <br>
+    <input type="text" name="telefon" [(ngModel)]="telefon"> <br>
+    <label for="adresa">Adresa:</label> <br>
+    <input type="text" name="adresa" [(ngModel)]="adresa"> <br>
+
+    <label for="subjects">Predmeti koje želite da predajete:</label> <br>
+    <select id="subjects" name="subjects" multiple [(ngModel)]="predmeti" required>
+        <option *ngFor="let p of sviMoguciPredmeti" [value]="p.naziv">{{p.naziv}}</option>
+        <option value="nešto drugo">nešto drugo</option>
+    </select> <br>
+
+    <label for="uzrast">Izaberite uzrast kome želite da predajete:</label><br>
+    <select name="uzrast" id="uzrast" multiple [(ngModel)]="uzrast" required>
+        <option value="Osnovna skola 1-4. razred">Osnovna skola 1-4. razred</option>
+        <option value="Osnovna skola 5-8. razred">Osnovna skola 5-8. razred</option>
+        <option value="Srednja skola">Srednja skola</option>
+    </select> <br>
+
+    <label for="profilePicture">Profilna slika:</label>
+    <input type="file" (change)="onUpload($event)" id="profilePicture" name="profilePicture" [(ngModel)]="slika" accept="image/*, .jpg .jpeg, .png">
+    <br>
+
+    <button class="btn-primary" (click)="promeniPodatke()">Promeni podatke</button> <br>
+    
+    <button class="btn-secondary" (click)="nazad()">Nazad</button>
+    <div class="navigation-link" *ngIf="tip!='admin'">
+      <a href="promena_lozinke">Promena lozinke</a> <br>
+    </div>
+</form>

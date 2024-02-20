@@ -1,0 +1,86 @@
+
+
+<div class="odrzani-casovi-container">
+  <h3>Održani časovi:</h3>
+  <div class="card-container">
+    <div class="card" *ngFor="let o of odrzani">
+      <div class="card-header">
+        <h4>{{o.datum_od | date:'dd.MM.yyyy hh:mm a'}}</h4>
+      </div>
+      <div class="card-body">
+        <p><strong>Tema:</strong> {{o.teme}}</p>
+        <p><strong>Nastavnik:</strong> {{o.nastavnik}}</p>
+        <p><strong>Predmet:</strong> {{o.predmet}}</p>
+        <p><strong>Komentar nastavnika:</strong> {{o.komentar_nastavnika}}</p>
+        <p *ngIf="o.komentar_ucenika === ''">
+          <button class="oceni-button" (click)="openRatingForm(o)">Oceni</button>
+        </p>
+      </div>
+    </div>
+  </div>
+<br>
+<hr>
+  <div *ngIf="selectedCas && selectedCas.komentar_ucenika === ''" class="rating-form-container">
+    <h2>Oceni nastavnika</h2>
+		<form (submit)="submitRating()">
+		  <label for="comments">Komentar:</label><br>
+		  <textarea id="comments" name="comments" [(ngModel)]="ratingForm.comments" required></textarea>
+        <br>
+		  <label for="rating">Ocena:</label><br>
+		  <div class="star-rating">
+			<span *ngFor="let star of stars" (click)="setRating(star)" [class.active]="star <= ratingForm.rating" [class.hover]="star <= hoverRating"
+			  (mouseover)="hoverRating = star" (mouseout)="hoverRating = 0">&#9733;</span>
+		  </div>
+		  <br>
+		  <br>
+		  <button class="oceni-button" type="submit">Potvrdi</button>
+    </form>
+  </div>
+  <h2 *ngIf="errorMessage" class="error-message">{{errorMessage}}</h2>
+</div>
+<br>
+<hr>
+<div class="zakazani-casovi-container">
+  <h3>Zakazani časovi:</h3>
+  <div class="card-container">
+    <div class="card" *ngFor="let z of zakazani">
+      <div class="card-header">
+        <h4>{{z.datum_od | date:'dd.MM.yyyy hh:mm a'}}</h4>-
+        <h4>{{z.datum_do | date:'dd.MM.yyyy hh:mm a'}}</h4>
+      </div>
+      <div class="card-body">
+        <p><strong>Tema:</strong> {{z.teme}}</p>
+        <p><strong>Nastavnik:</strong> {{z.nastavnik}}</p>
+        <p><strong>Predmet:</strong> {{z.predmet}}</p>
+        <p><strong>Status:</strong> {{z.potvrdjen?'potvrdjen':'nepotvrdjen'}}</p>
+        <p *ngIf="showStartButton(z.datum_od, z.datum_do)">
+          <button class="start-class-button" (click)="startClass(z)">Priključi se času</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<div class="gost-casovi-container">
+  <h3>Časovi drugih korisnika na koje se možete prijaviti kao gost:</h3>
+  <div class="card-container">
+    <div class="card" *ngFor="let z of gostujuciCas">
+        <div class="card-header">
+          <h4>{{z.datum_od | date:'dd.MM.yyyy hh:mm a'}}</h4>-
+          <h4>{{z.datum_do | date:'dd.MM.yyyy hh:mm a'}}</h4>
+        </div>
+        <div class="card-body">
+          <p><strong>Tema:</strong> {{z.teme}}</p>
+          <p><strong>Nastavnik:</strong> {{z.nastavnik}}</p>
+          <p><strong>Predmet:</strong> {{z.predmet}}</p>
+          <p *ngIf="showStartButton(z.datum_od, z.datum_do)">
+            <button class="start-class-button" (click)="gostClass(z)">Priključi se času</button>
+          </p>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="navigation-links">
+    <a href="user_home">Nazad</a>
+</div>

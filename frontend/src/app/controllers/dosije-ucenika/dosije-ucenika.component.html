@@ -1,0 +1,39 @@
+
+<div *ngIf="successMessage" class="alert alert-success">
+  {{ successMessage }}
+</div>
+<div *ngIf="errorKomentar" class="alert alert-danger">
+  {{errorKomentar}}
+</div>
+<div *ngFor="let cas of casovi" class="cas-container">
+    <h2>{{ cas.predmet }}</h2>
+    <table border="2px" class="cas-table">
+      <thead>
+        <tr>
+          <th>Datum</th>
+          <th>Održan</th>
+          <th>Tema</th>
+          
+          <th>Komentar nastavnika</th>
+          <th>Dodaj ocenu i komentar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ cas.datum_od | date:'dd.MM.yyyy' }}</td>
+          <td>{{ cas.odrzan ? 'Da' : 'Ne' }}</td>
+          <td>{{ cas.teme }}</td>
+          
+          <td>{{ cas.komentar_nastavnika }}</td>
+          <td>
+            <input [disabled]="cas.komentar_nastavnika!='' || kor_ime_nastavnika!=cas.nastavnik" type="number" [(ngModel)]="cas.novaOcena" min="1" max="5" placeholder="Ocena (1-5)"> &nbsp;
+            <input [disabled]="cas.komentar_nastavnika!='' || kor_ime_nastavnika!=cas.nastavnik" type="text" [(ngModel)]="cas.noviKomentar" placeholder="Komentar"> &nbsp;
+            <button [disabled]="cas.komentar_nastavnika!=''|| kor_ime_nastavnika!=cas.nastavnik" (click)="dodajOcenuIKomentar(cas)">Dodaj</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="navigation-links">
+    <a href="nastavnikovi_ucenici">Nazad</a>
+  </div>

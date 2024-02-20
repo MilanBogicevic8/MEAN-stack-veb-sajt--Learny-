@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e13"
+  },
+  "naziv": "Matematika",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e14"
+  },
+  "naziv": "Fizika",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e15"
+  },
+  "naziv": "Hemija",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e16"
+  },
+  "naziv": "Informatika",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e17"
+  },
+  "naziv": "Programiranje",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e18"
+  },
+  "naziv": "Srpski jezik i književnost",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e19"
+  },
+  "naziv": "Engleski jezik",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e1a"
+  },
+  "naziv": "Nemački jezik",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e1b"
+  },
+  "naziv": "Italijanski jezik",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e1c"
+  },
+  "naziv": "Francuski jezik",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e1d"
+  },
+  "naziv": "Španski jezik",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e1e"
+  },
+  "naziv": "Latinski jezik",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e1f"
+  },
+  "naziv": "Biologija",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e20"
+  },
+  "naziv": "Istorija",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e21"
+  },
+  "naziv": "Geografija",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a7b528e0eaf6001cba7e22"
+  },
+  "naziv": "Svet oko nas",
+  "odobren": true
+},
+{
+  "_id": {
+    "$oid": "65a87a09bc22ffeb1ae3ce51"
+  },
+  "naziv": "Fizičko",
+  "odobren": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b0df56a16155b72ed7e13f"
+  },
+  "naziv": "Osnovi racunarske tehnike",
+  "odobren": false,
+  "__v": 0
+}]

@@ -1,0 +1,27 @@
+<div class="login-container">
+    <div class="logo-section">
+        <img width="50%" height="100%" src="assets/logo.png" alt="Logo">
+    </div>
+    
+  
+
+    <div class="login-form">
+      <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+         {{ errorMessage }}
+      </div>
+      <label for="kor_ime">Korisničko ime:</label>
+      <input type="text" id="kor_ime" placeholder="Unesite korisničko ime" [(ngModel)]="kor_ime">
+      <br>
+      <label for="lozinka">Lozinka:</label>
+      <input type="password" id="lozinka" placeholder="Unesite lozinku" [(ngModel)]="lozinka">
+  
+      <div class="button-container">
+        <button class="btn btn-primary" (click)="login()">Login</button> <br>
+        <button class="btn btn-primary" (click)="info()">Info o sajtu</button>
+      </div>
+  
+      <a routerLink="registracija" class="btn btn-link">Registracija</a> <br>
+      <a routerLink="zaboravljena_lozinka" class="btn btn-link">Zaboravljena lozinka?</a> <br>
+      <a routerLink="promena_lozinke" class="btn btn-link">Promena lozinke</a>
+    </div>
+  </div>

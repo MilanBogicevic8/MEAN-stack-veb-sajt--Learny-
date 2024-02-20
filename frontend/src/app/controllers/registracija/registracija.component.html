@@ -1,0 +1,114 @@
+  <!-- Prikazivanje poruka u stilizovanim alertima -->
+  <br>
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+  <form (ngSubmit)="submitForm()">
+    <div class="center-box">
+      <div class="user-type-section">
+        <label for="tip">Tip korisnika:</label>
+      </div>
+    
+      <div class="radio-buttons">
+        <div>
+          <p style="text-align: center;">Učenik:</p>
+          <input type="radio" name="tip" id="ucenik" value="ucenik" [(ngModel)]="tip" (change)="promena1()">
+        </div>
+    
+        <div>
+          <p style="text-align: center;">Nastavnik:</p>
+          <input type="radio" name="tip" id="nastavnik" value="nastavnik" [(ngModel)]="tip" (change)="promena1()">
+        </div>
+      </div>
+    </div>
+    <label for="username">Korisničko ime:</label>
+    <input type="text" id="username" name="username" [(ngModel)]="kor_ime" required minlength="3" maxlength="20">
+    <br>
+    <label for="password">Lozinka:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="lozinka" required>
+    <br>
+    <label for="firstName">Ime:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="ime" required>
+    <br>
+    <label for="lastName">Prezime:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="prezime" required>
+    <br>
+    <label for="gender">Pol:</label>
+    <select id="gender" name="gender" [(ngModel)]="pol" required>
+      <option value="M">Muški</option>
+      <option value="Z">Ženski</option>
+    </select>
+    <br>
+    <label for="address">Adresa:</label>
+    <input type="text" id="address" name="address" [(ngModel)]="adresa" required>
+    <br>
+    <label for="phone">Kontakt telefon:</label>
+    <input type="tel" id="phone" name="phone" [(ngModel)]="telefon" required>
+    <br>
+    <label for="email">E-mail adresa:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="mejl" required>
+    <br>
+    <label for="bezbednost_pitanje">Bezbedonosno pitanje:</label>
+    <input type="text" name="bezbedonosno_pitanje" id="bezbednost_pitanje" placeholder="Unesite pitanje" [(ngModel)]="bezbednost_pitanje">
+    <br>
+    <label for="bezbednost">Odgovor:</label>
+    <input type="text" name="bezbedonosno" id="bezbednost" placeholder="Unesite odgovor na pitanje" [(ngModel)]="bezbednost">
+    <br>
+    
+    <label for="profilePicture">Profilna slika:</label>
+    <input type="file" (change)="onUpload($event)" id="profilePicture" name="profilePicture" [(ngModel)]="slika" accept="image/*, .jpg .jpeg, .png">
+    <br>
+    <div *ngIf="isTeacher==false">
+      <label for="schoolType">Tip škole:</label>
+      <select id="schoolType" name="schoolType" [(ngModel)]="skola" required>
+        <option value="osnovna">Osnovna škola</option>
+        <option value="gimnazija">Srednja - gimnazija</option>
+        <option value="strucna">Srednja - stručna</option>
+        <option value="umetnicka">Srednja - umetnička</option>
+      </select>
+      <br>
+      <label for="currentGrade">Trenutni razred:</label>
+      <input type="number" id="currentGrade" name="currentGrade" [(ngModel)]="razred" required
+         *ngIf="skola === 'osnovna'" min="1" max="8">
+      <input type="number" id="currentGrade" name="currentGrade" [(ngModel)]="razred" required
+         *ngIf="skola !== 'osnovna'" min="1" max="4"><br>
+    </div>
+    <!-- Dodato polje za predmete ako je korisnik nastavnik -->
+    <div *ngIf="isTeacher==true">
+      <div *ngIf="korak==false">
+        <button (click)="drugiKorak()">Drugi korak</button>
+      </div>
+      <div *ngIf="korak==true">
+        <label for="cv">CV</label>
+        <input type="file" (change)="onUpload($event)" name="cv" id="cv" [(ngModel)]="cv" accept=".pdf"> <br>
+        <label for="subjects">Predmeti koje želite da predajete:</label>
+        <select id="subjects" name="subjects" multiple [(ngModel)]="predmeti" (change)="promena2()" required>
+          <option *ngFor="let p of sviMoguciPredmeti" value="{{p.naziv}}">{{p.naziv}}</option>
+          <option value="nešto drugo">nešto drugo</option>
+        </select> <br>
+        <div *ngIf="dodatanIzbor==true && isTeacher==true">
+          Unesite dodatan predmet:<input type="text" name="dodatan" [(ngModel)]="dodatanPredmet">
+        </div> <br>
+        <label for="uzrast">Izaberite uzrast kome zelite da predajete:</label>
+        <select name="uzrast" id="uzrast" [(ngModel)]="uzrast" multiple required>
+          <option value="Osnovna skola 1-4. razred">Osnovna skola 1-4. razred</option>
+          <option value="Osnovna skola 5-8. razred">Osnovna skola 5-8. razred</option>
+          <option value="Srednja skola">Srednja skola</option>
+        </select>
+      </div>
+    </div>
+    <div *ngIf="isTeacher==false || (isTeacher==true && korak==true)">
+      <div *ngIf="isTeacher==true">
+        <input type="text" name="saznali" placeholder="Gde ste saznali za ovaj sajt" [(ngModel)]="saznali">
+      </div>
+      <button type="submit" style="display: flex;justify-content: center;">Registruj se</button>
+    </div>
+  </form>
+  <br>
+  <div class="navigation-links">
+    <a href="">Nazad</a>
+  </div>
+  

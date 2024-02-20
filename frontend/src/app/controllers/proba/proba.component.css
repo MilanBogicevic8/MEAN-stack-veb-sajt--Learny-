@@ -1,0 +1,5 @@
+/**@import '../../../../node_modules/@syncfusion/ej2-material-theme/styles/material.css';*/
+.zelena {
+    background-color: green !important;
+    color: white !important;
+  }

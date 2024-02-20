@@ -1,0 +1,18 @@
+
+.header, .footer {
+    background-color: #007bff;
+}
+.footer {
+    font-size: small;
+    text-align: center;
+}
+.bg-babyyellow {
+    background-color: #fdfef4;
+}
+body {
+    background-color: lightgray;
+}
+
+ body td {
+    overflow-wrap: break-word;
+ }

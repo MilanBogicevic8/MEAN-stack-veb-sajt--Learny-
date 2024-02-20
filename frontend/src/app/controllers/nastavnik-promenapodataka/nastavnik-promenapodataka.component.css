@@ -1,0 +1,97 @@
+
+.profile-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.btn-secondary {
+    background-color: #6c757d; /* Bootstrap's secondary color */
+}
+
+button:hover,
+button.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    color: #721c24; /* Bootstrap's alert text color */
+    background-color: #f8d7da; /* Bootstrap's alert background color */
+    border: 1px solid #f5c6cb; /* Bootstrap's alert border color */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.alert-success {
+    color: #155724; /* Bootstrap's alert-success text color */
+    background-color: #d4edda; /* Bootstrap's alert-success background color */
+    border: 1px solid #c3e6cb; /* Bootstrap's alert-success border color */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.alert-danger {
+    color: #721c24; /* Bootstrap's alert-danger text color */
+    background-color: #f8d7da; /* Bootstrap's alert-danger background color */
+    border: 1px solid #f5c6cb; /* Bootstrap's alert-danger border color */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.navigation-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-link a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  .navigation-link a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }

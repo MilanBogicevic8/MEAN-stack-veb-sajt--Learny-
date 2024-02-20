@@ -1,0 +1,55 @@
+
+<!-- Otkazani casovi -->
+<h2 (click)="toggleSection('otkazani')">Otkazani časovi</h2>
+<div *ngIf="otkazaniSectionOpen">
+  <div class="card-container">
+    <div class="card" *ngFor="let c of otkazani" [class.plava]="proveraCitanja(c)">
+      <div class="card-header">
+        <h4>Nastavnik: {{c.nastavnik}}</h4>
+      </div>
+      <div class="card-body">
+        <p><strong>Predmet:</strong> {{c.predmet}}</p>
+        <p><strong>Tema:</strong> {{c.teme!=''?c.teme:'/'}}</p>
+        <p><strong>Razlog:</strong> {{c.razlog_otkazivanja}}</p>
+        <p><strong>Datum otkaza:</strong> {{c.datum_potvrde | date:'dd.MM.yyyy HH:mm:ss'}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Potvrdjeni casovi -->
+<h2 (click)="toggleSection('potvrdjeni')">Potvrdjeni časovi</h2>
+<div *ngIf="potvrdjeniSectionOpen">
+  <div class="card-container">
+    <div class="card" *ngFor="let c of potvrdjeni" [class.plava]="proveraCitanja(c)">
+      <div class="card-header">
+        <h4>Nastavnik: {{c.nastavnik}}</h4>
+      </div>
+      <div class="card-body">
+        <p><strong>Predmet:</strong> {{c.predmet}}</p>
+        <p><strong>Tema:</strong> {{c.teme!=''?c.teme:'/'}}</p>
+        <p><strong>Datum potvrde:</strong> {{c.datum_potvrde | date:'dd.MM.yyyy HH:mm:ss'}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Komentari nakon odrzanih casova -->
+<h2 (click)="toggleSection('nakonCasaKomentar')">Komentari nakon održanih časova</h2>
+<div *ngIf="nakonCasaKomentarSectionOpen">
+  <div class="card-container">
+    <div class="card" *ngFor="let c of nakonCasaKomentar" [class.plava]="proveraCitanja(c)">
+      <div class="card-header">
+        <h4>Nastavnik: {{c.nastavnik}}</h4>
+      </div>
+      <div class="card-body">
+        <p><strong>Predmet:</strong> {{c.predmet}}</p>
+        <p><strong>Tema:</strong> {{c.teme!=''?c.teme:'/'}}</p>
+        <p><strong>Komentar nakon časa:</strong> {{c.komentar_nastavnika}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navigation-links">
+  <a href="user_home">Nazad</a>
+</div>

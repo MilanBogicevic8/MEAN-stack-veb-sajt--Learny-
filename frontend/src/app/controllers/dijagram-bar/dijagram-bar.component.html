@@ -1,0 +1,8 @@
+
+<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    <e-series-collection>
+        <e-series [dataSource]='chartData' type='StackingBar' columnFacet= 'Cylinder' xName='x' yName='y'></e-series>
+        <e-series [dataSource]='chartData' type='StackingBar' columnFacet= 'Cylinder' xName='x' yName='y1'></e-series>
+        <e-series [dataSource]='chartData' type='StackingBar' columnFacet= 'Cylinder' xName='x' yName='y2'></e-series>
+    </e-series-collection>
+</ejs-chart>

@@ -1,0 +1,38 @@
+.header, .footer {
+    background-color: #007bff;
+}
+.footer {
+    font-size: small;
+    text-align: center;
+}
+.bg-babyyellow {
+    background-color: #fdfef4;
+}
+body {
+    background-color: lightgray;
+}
+
+ body td {
+    overflow-wrap: break-word;
+ }
+
+ .btn-danger {
+    width:100px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.button_wrapper{
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}

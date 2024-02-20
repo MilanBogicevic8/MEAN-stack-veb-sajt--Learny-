@@ -1,0 +1,79 @@
+<!-- nastavnik-casovi.component.html -->
+
+<div>
+  <label>Izaberi broj časova:</label>
+  <select [(ngModel)]="brojCasova" (change)="prikaziCasove()">
+    <option value="5">Prvih 5 časova u naredna 3 dana</option>
+    <option value="10">Prvih 10 časova u naredna 3 dana</option>
+    <option value="sve">Svi časovi</option>
+  </select>
+</div>
+<div *ngIf="mojiCasovi.length > 0">
+  <h2>Moji časovi</h2>
+  <div class="card-container">
+    <div *ngFor="let cas of mojiCasovi" class="card">
+      <div class="card-header">
+        {{ cas.predmet }}
+      </div>
+      <div class="card-body">
+        <p><strong>Ime učenika:</strong> {{ cas.ime_ucenika }}</p>
+        <p><strong>Prezime učenika:</strong> {{ cas.prezime_ucenika }}</p>
+        <p><strong>Tema:</strong> 
+          <span *ngIf="cas.teme==''">/</span>
+          {{ cas.teme }}
+        </p>
+        <p><strong>Datum:</strong> {{ cas.datum_od | date:'dd.MM.yyyy hh.mm' }}</p>
+        <p *ngIf="prikaziDugmeZaPrijavu(cas)">
+          <button (click)="prijaviSeNaCas(cas)">Priključi se času</button>
+        </p>
+        <p *ngIf="dozvoliOtkaz(cas)">
+          <strong>Razlog otkazivanja:</strong> <input type="text" placeholder="Unesite razlog otkazivanja" [(ngModel)]="cas.razlog_otkazivanja"> <br>
+          <button (click)="otkazi_cas(cas)">Otkazi</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="errorOtkazivanje" class="alert alert-danger">
+  {{errorOtkazivanje}}
+</div>
+
+<div *ngIf="mojiCasovi.length === 0">
+  <p>Nemate zakazane časove u naredna 3 dana.</p>
+</div>
+
+<hr>
+
+<div *ngIf="nepotvrdjeniCas.length > 0">
+  <h2>Lista zahteva za časovima</h2>
+  <div class="card-container">
+    <div *ngFor="let zahtev of nepotvrdjeniCas" class="card">
+      <div class="card-header">
+        {{ zahtev.predmet }}
+      </div>
+      <div class="card-body">
+        <p> <strong>Ime učenika:</strong> {{ zahtev.ime_ucenika }}</p>
+        <p><strong>Prezime učenika:</strong> {{ zahtev.prezime_ucenika }}</p>
+        <p>
+          <strong>Prosečna ocena:</strong>
+          <span *ngIf="zahtev.ocene_ucenika && zahtev.ocene_ucenika.length >= 3; else noAverage">
+            {{ prosek(zahtev.ocene_ucenika) }}
+          </span>
+          <ng-template #noAverage>/</ng-template>
+        </p>
+        <p><strong>Teme:</strong> {{ zahtev.teme }}</p>
+        <p><strong>Datum:</strong> {{ zahtev.datum_od | date:'dd.MM.yyyy hh.mm' }}</p>
+        <p>
+          <button (click)="potvrdiZahtev(zahtev)">Potvrdi</button> <br>
+          <input type="text" placeholder="Unesite razlog otkazivanja" [(ngModel)]="zahtev.razlog_otkazivanja">
+          <button (click)="odbijZahtev(zahtev)">Odbij</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navigation-links">
+  <a href="nastavnik_home">Nazad</a>
+  <a href="nastavnik_kalendar">Interaktivni kalendar</a>
+</div>
+
